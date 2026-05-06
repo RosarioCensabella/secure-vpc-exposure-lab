@@ -305,34 +305,20 @@ Main Terraform files:
 ```text
 
 terraform/
-
-â”œâ”€â”€ providers.tf
-
-â”œâ”€â”€ variables.tf
-
-â”œâ”€â”€ locals.tf
-
-â”œâ”€â”€ main.tf
-
-â”œâ”€â”€ vpc.tf
-
-â”œâ”€â”€ subnets.tf
-
-â”œâ”€â”€ routes.tf
-
-â”œâ”€â”€ security-groups.tf
-
-â”œâ”€â”€ nacl.tf
-
-â”œâ”€â”€ alb.tf
-
-â”œâ”€â”€ ec2.tf
-
-â”œâ”€â”€ flow-logs.tf
-
-â”œâ”€â”€ iam.tf
-
-â””â”€â”€ outputs.tf
+|-- providers.tf
+|-- variables.tf
+|-- locals.tf
+|-- main.tf
+|-- vpc.tf
+|-- subnets.tf
+|-- routes.tf
+|-- security-groups.tf
+|-- nacl.tf
+|-- alb.tf
+|-- ec2.tf
+|-- flow-logs.tf
+|-- iam.tf
+`-- outputs.tf
 
 ```
 
@@ -687,96 +673,44 @@ This project demonstrates several practical cloud security lessons:
 ```text
 
 secure-vpc-exposure-lab/
-
-â”œâ”€â”€ README.md
-
-â”œâ”€â”€ cleanup.md
-
-â”œâ”€â”€ .gitignore
-
-â”‚
-
-â”œâ”€â”€ app/
-
-â”‚   â””â”€â”€ user-data.sh
-
-â”‚
-
-â”œâ”€â”€ architecture/
-
-â”‚   â””â”€â”€ traffic-flow.md
-
-â”‚
-
-â”œâ”€â”€ docs/
-
-â”‚   â”œâ”€â”€ architecture.md
-
-â”‚   â”œâ”€â”€ security-design.md
-
-â”‚   â”œâ”€â”€ exposure-validation.md
-
-â”‚   â”œâ”€â”€ logging-and-observability.md
-
-â”‚   â””â”€â”€ troubleshooting.md
-
-â”‚
-
-â”œâ”€â”€ evidence/
-
-â”‚   â””â”€â”€ screenshots/
-
-â”‚       â”œâ”€â”€ aws-console/
-
-â”‚       â””â”€â”€ power-shell/
-
-â”‚
-
-â”œâ”€â”€ screenshots/
-
-â”‚   â””â”€â”€ README.md
-
-â”‚
-
-â”œâ”€â”€ terraform/
-
-â”‚   â”œâ”€â”€ providers.tf
-
-â”‚   â”œâ”€â”€ variables.tf
-
-â”‚   â”œâ”€â”€ locals.tf
-
-â”‚   â”œâ”€â”€ main.tf
-
-â”‚   â”œâ”€â”€ vpc.tf
-
-â”‚   â”œâ”€â”€ subnets.tf
-
-â”‚   â”œâ”€â”€ routes.tf
-
-â”‚   â”œâ”€â”€ security-groups.tf
-
-â”‚   â”œâ”€â”€ nacl.tf
-
-â”‚   â”œâ”€â”€ alb.tf
-
-â”‚   â”œâ”€â”€ ec2.tf
-
-â”‚   â”œâ”€â”€ flow-logs.tf
-
-â”‚   â”œâ”€â”€ iam.tf
-
-â”‚   â”œâ”€â”€ outputs.tf
-
-â”‚   â””â”€â”€ .terraform.lock.hcl
-
-â”‚
-
-â””â”€â”€ tests/
-
-&#x20;   â”œâ”€â”€ validation-commands.md
-
-&#x20;   â””â”€â”€ expected-results.md
+|-- README.md
+|-- cleanup.md
+|-- .gitignore
+|-- app/
+|   `-- user-data.sh
+|-- architecture/
+|   `-- traffic-flow.md
+|-- docs/
+|   |-- architecture.md
+|   |-- security-design.md
+|   |-- exposure-validation.md
+|   |-- logging-and-observability.md
+|   `-- troubleshooting.md
+|-- evidence/
+|   `-- screenshots/
+|       |-- aws-console/
+|       `-- power-shell/
+|-- screenshots/
+|   `-- README.md
+|-- terraform/
+|   |-- providers.tf
+|   |-- variables.tf
+|   |-- locals.tf
+|   |-- main.tf
+|   |-- vpc.tf
+|   |-- subnets.tf
+|   |-- routes.tf
+|   |-- security-groups.tf
+|   |-- nacl.tf
+|   |-- alb.tf
+|   |-- ec2.tf
+|   |-- flow-logs.tf
+|   |-- iam.tf
+|   |-- outputs.tf
+|   `-- .terraform.lock.hcl
+`-- tests/
+    |-- validation-commands.md
+    `-- expected-results.md
 
 ```
 
